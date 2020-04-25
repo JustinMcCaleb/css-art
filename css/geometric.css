@@ -1,7 +1,7 @@
 :root {
-    --invisible-element: rgba(0, 0, 0, 0.9);
-    --first-element-hover: #f700da;
-    --second-element-hover: #03cbff;
+    --invisible-element: black;
+    --first-element-hover: #ff00ed;
+    --second-element-hover: #ff00ed;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 main {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: black;
 }
 
 .elements-container {
@@ -34,7 +34,7 @@ main {
 }
 
 div.elements-1:nth-of-type(even) {
-    transition: background-color 0.1s ease;
+    transition: background-color 2.5s ease-out -.75s;
     background-color: var(--invisible-element);
 }
 
@@ -43,7 +43,7 @@ div.elements-1:nth-of-type(even):hover {
 }
 
 div.elements-1:nth-of-type(odd) {
-    transition: background-color 0.1s ease;
+    transition: background-color 2.5s ease-out -.75s;
     background-color: var(--invisible-element);
 }
 
@@ -52,7 +52,7 @@ div.elements-1:nth-of-type(odd):hover {
 }
 
 div.elements-2:nth-of-type(even) {
-    transition: background-color 0.1s ease;
+    transition: background-color 2.5s ease-out -.75s;
     background-color: var(--invisible-element);
 }
 
@@ -61,7 +61,7 @@ div.elements-2:nth-of-type(even):hover {
 }
 
 div.elements-2:nth-of-type(odd) {
-    transition: background-color 0.1s ease;
+    transition: background-color 2.5s ease-out -.75s;
     background-color: var(--invisible-element);
 }
 
