@@ -1,0 +1,71 @@
+:root {
+    --invisible-element: rgba(0, 0, 0, 0.9);
+    --first-element-hover: #f700da;
+    --second-element-hover: #03cbff;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.elements-container {
+    width: 100%;
+    height: 5%;
+    display: flex;
+}
+
+.elements-1 {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.elements-2 {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+div.elements-1:nth-of-type(even) {
+    transition: background-color 0.1s ease;
+    background-color: var(--invisible-element);
+}
+
+div.elements-1:nth-of-type(even):hover {
+    background-color: var(--first-element-hover);
+}
+
+div.elements-1:nth-of-type(odd) {
+    transition: background-color 0.1s ease;
+    background-color: var(--invisible-element);
+}
+
+div.elements-1:nth-of-type(odd):hover {
+    background-color: var(--second-element-hover);
+}
+
+div.elements-2:nth-of-type(even) {
+    transition: background-color 0.1s ease;
+    background-color: var(--invisible-element);
+}
+
+div.elements-2:nth-of-type(even):hover {
+    background-color: var(--second-element-hover);
+}
+
+div.elements-2:nth-of-type(odd) {
+    transition: background-color 0.1s ease;
+    background-color: var(--invisible-element);
+}
+
+div.elements-2:nth-of-type(odd):hover {
+    background-color: var(--first-element-hover);
+}
+
